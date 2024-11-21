@@ -1,9 +1,13 @@
 spring:
   application:
-    name: product-service
+    name: product-service  # 애플리케이션 이름
 server:
-  port: 19093
+  port: 19093  # 서비스 포트 번호
+
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:19090/eureka/
+      defaultZone: http://localhost:19090/eureka/  # Eureka 서버 URL
+  instance:
+    prefer-ip-address: true  # IP 주소를 사용하도록 설정
+    hostname: localhost  # 등록 시 호스트 이름을 localhost로 설정
