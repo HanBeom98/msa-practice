@@ -11,7 +11,7 @@ public class OrderController {
 
     private final OrderService orderService;
 
-    @GetMapping("/order/")
+    @GetMapping("/order")
     public String getOrder() {
         return "Order detail";
     }

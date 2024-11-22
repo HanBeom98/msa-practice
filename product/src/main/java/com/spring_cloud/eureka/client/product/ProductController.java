@@ -10,7 +10,7 @@ public class ProductController {
     @Value("${server.port}")
     private String serverPort;
 
-    @GetMapping("/product/")
+    @GetMapping("/product")
     public String getProduct() {
         return "product " + " info From port :" + serverPort;
     }
